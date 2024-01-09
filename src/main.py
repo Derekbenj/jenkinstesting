@@ -15,6 +15,7 @@ def main():
     # predictions = model.predict(new_data)
 
     # print(predictions)
+    print("We did it!")
 
 if __name__ == "__main__":
     main()
