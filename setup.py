@@ -13,6 +13,6 @@ setup(
         'pandas>=1.5.4',
         'requests~=2.28.1',
         'matplotlib>=3.6.2',
-        'sklearn'
+        'scikit-learn'
     ]
 )
