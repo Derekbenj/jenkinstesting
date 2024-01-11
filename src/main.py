@@ -17,6 +17,7 @@ def main():
     # print(predictions)
     print("We did it!")
     print("does it rebuild on push?")
+    print("will it build again?")
 
 if __name__ == "__main__":
     main()
