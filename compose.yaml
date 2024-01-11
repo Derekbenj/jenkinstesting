@@ -1,0 +1,17 @@
+version: "3.9"
+
+networks:
+  shared_network:
+    external: true
+
+services:
+  python_project:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: python_project
+    restart: on-failure
+    networks:
+      - shared_network
+    ports:
+      - "8000:8000"

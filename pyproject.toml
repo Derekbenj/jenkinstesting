@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jenkins test"
+version = "0.1.0"
+description = "A basic project using Poetry."
+authors = ["Derek Ward derekbenjward@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.5"
+pandas = "~1.5"
+matplotlib = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+# Add any development dependencies here, if applicable
+
+[buid-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
