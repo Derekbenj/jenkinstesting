@@ -9,8 +9,6 @@ pipeline {
             // }
       }
 
-    def image_name = 'git_jenkins-python_project'
-
     triggers {
         pollSCM '* * * * *'
     }   
@@ -28,6 +26,7 @@ pipeline {
             steps {
                 script {
                     echo "Deleting old image.."
+                    def imageName = 'git_jenkins-python_project'
                     sh "docker rmi -f ${image_name}"
                 }
             }
