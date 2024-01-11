@@ -15,9 +15,8 @@ def main():
     # predictions = model.predict(new_data)
 
     # print(predictions)
-    print("We did it!")
-    print("does it rebuild on push?")
-    print("will it build again?")
+    print("I work automatically!")
+    print("I'm incredible!")
 
 if __name__ == "__main__":
     main()
