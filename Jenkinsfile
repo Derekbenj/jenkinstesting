@@ -1,12 +1,12 @@
 pipeline {
     agent {
-        docker {
-            image 'docker:dind' 
-            args '-v /var/run/docker.sock:/var/run/docker.sock' 
+        // docker {
+        // image 'docker:dind'
+        // args '-v /var/run/docker.sock:/var/run/docker.sock -p 2375:2375 --privileged' 
+        // }
+        node {
+            label 'docker-agent-alpine'
         }
-        // node {
-            // label 'docker-agent-alpine'
-            // }
       }
 
     triggers {
