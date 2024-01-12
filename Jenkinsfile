@@ -5,7 +5,7 @@ pipeline {
         // args '-v /var/run/docker.sock:/var/run/docker.sock -p 2375:2375 --privileged' 
         // }
         node {
-            label 'docker-agent-alpine'
+            label 'docker-agent-python'
         }
       }
 
